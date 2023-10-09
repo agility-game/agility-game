@@ -56,7 +56,7 @@ website:
         - text: "---"
         - topics/solutions.qmd
         - text: "---"
-        - topics/epics.qmd
+        - topics/epics-themes.qmd
         - text: "---"
         - topics/features.qmd
         - text: "---"
