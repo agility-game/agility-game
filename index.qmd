@@ -13,7 +13,7 @@ import { renderChart } from "@trebor/zoomable-voronoi-treemap"
 
 ```{ojs}
 //| echo: false
-md`### Themes`
+md`### Topics`
 ```
 
 ```{ojs}
