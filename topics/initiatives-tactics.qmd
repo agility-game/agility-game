@@ -1,5 +1,5 @@
 ---
-title: "Initiatives/Tactics"
+title: "Initiatives / Tactics"
 ---
 
-About initiatives/tactics.
+About initiatives / tactics.
