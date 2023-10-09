@@ -21,6 +21,13 @@
     "text": "About features."
   },
   {
+    "objectID": "topics/objectives.html",
+    "href": "topics/objectives.html",
+    "title": "Objectives",
+    "section": "",
+    "text": "About objectives."
+  },
+  {
     "objectID": "topics/company-purpose.html",
     "href": "topics/company-purpose.html",
     "title": "Company Purpose",
@@ -28,46 +35,39 @@
     "text": "About company purpose."
   },
   {
-    "objectID": "topics/company-values.html",
-    "href": "topics/company-values.html",
-    "title": "Company Values",
-    "section": "",
-    "text": "About company values."
-  },
-  {
-    "objectID": "topics/company-vision.html",
-    "href": "topics/company-vision.html",
-    "title": "Company Vision",
-    "section": "",
-    "text": "About company vision."
-  },
-  {
-    "objectID": "themes/stories.html",
-    "href": "themes/stories.html",
-    "title": "Stories",
-    "section": "",
-    "text": "About stories."
-  },
-  {
-    "objectID": "themes/portfolio.html",
-    "href": "themes/portfolio.html",
-    "title": "Portfolio",
-    "section": "",
-    "text": "About portfolio."
-  },
-  {
-    "objectID": "themes/operations.html",
-    "href": "themes/operations.html",
-    "title": "Operations",
-    "section": "",
-    "text": "About operations."
-  },
-  {
-    "objectID": "themes/opportunities.html",
-    "href": "themes/opportunities.html",
+    "objectID": "topics/opportunities.html",
+    "href": "topics/opportunities.html",
     "title": "Oppertunities",
     "section": "",
     "text": "About opportunities."
+  },
+  {
+    "objectID": "topics/themes.html",
+    "href": "topics/themes.html",
+    "title": "Themes (formerly Epics)",
+    "section": "",
+    "text": "About themes (formerly epics)."
+  },
+  {
+    "objectID": "topics/goals.html",
+    "href": "topics/goals.html",
+    "title": "Goals",
+    "section": "",
+    "text": "About goals."
+  },
+  {
+    "objectID": "themes/tasks.html",
+    "href": "themes/tasks.html",
+    "title": "Tasks",
+    "section": "",
+    "text": "About tasks."
+  },
+  {
+    "objectID": "themes/product-vision.html",
+    "href": "themes/product-vision.html",
+    "title": "Product Vision",
+    "section": "",
+    "text": "About product vision."
   },
   {
     "objectID": "themes/programs.html",
@@ -119,39 +119,32 @@
     "text": "About product mission."
   },
   {
-    "objectID": "themes/product-vision.html",
-    "href": "themes/product-vision.html",
-    "title": "Product Vision",
+    "objectID": "themes/portfolio.html",
+    "href": "themes/portfolio.html",
+    "title": "Portfolio",
     "section": "",
-    "text": "About product vision."
+    "text": "About portfolio."
   },
   {
-    "objectID": "themes/objectives.html",
-    "href": "themes/objectives.html",
-    "title": "Objectives",
+    "objectID": "themes/stories.html",
+    "href": "themes/stories.html",
+    "title": "Stories",
     "section": "",
-    "text": "About objectives."
+    "text": "About stories."
   },
   {
-    "objectID": "themes/tasks.html",
-    "href": "themes/tasks.html",
-    "title": "Tasks",
+    "objectID": "topics/company-vision.html",
+    "href": "topics/company-vision.html",
+    "title": "Company Vision",
     "section": "",
-    "text": "About tasks."
+    "text": "About company vision."
   },
   {
-    "objectID": "topics/goals.html",
-    "href": "topics/goals.html",
-    "title": "Goals",
+    "objectID": "topics/company-values.html",
+    "href": "topics/company-values.html",
+    "title": "Company Values",
     "section": "",
-    "text": "About goals."
-  },
-  {
-    "objectID": "topics/themes.html",
-    "href": "topics/themes.html",
-    "title": "Themes (formerly Epics)",
-    "section": "",
-    "text": "About themes (formerly epics)."
+    "text": "About company values."
   },
   {
     "objectID": "topics/ideas.html",
@@ -159,6 +152,13 @@
     "title": "Ideas",
     "section": "",
     "text": "About ideas."
+  },
+  {
+    "objectID": "topics/operations.html",
+    "href": "topics/operations.html",
+    "title": "Operations",
+    "section": "",
+    "text": "About operations."
   },
   {
     "objectID": "topics/business-impact-principles-values.html",
