@@ -1,73 +1,66 @@
 [
   {
-    "objectID": "stories.html",
-    "href": "stories.html",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site."
+  },
+  {
+    "objectID": "SUMMARY.html",
+    "href": "SUMMARY.html",
+    "title": "Table of contents",
+    "section": "",
+    "text": "Table of contents\n\nAgility Game"
+  },
+  {
+    "objectID": "topics/stories.html",
+    "href": "topics/stories.html",
     "title": "Stories",
     "section": "",
     "text": "About stories."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Agility Game",
+    "objectID": "topics/features.html",
+    "href": "topics/features.html",
+    "title": "Features",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nimport { renderChart } from \"@trebor/zoomable-voronoi-treemap\"\n\n\n\n\n\n\n\nmd`### Themes`\n\n\n\n\n\n\n\ndata = {\n  const flare = await d3.json(\n    \"https://raw.githubusercontent.com/agility-game/agility-game-themes/main/data/themes.json\"\n  );\n  return d3.hierarchy(flare).sum((d) =&gt; (d.children ? 0 : Math.random()));\n}\n\n\n\n\n\n\n\n__topicsChart = {\n  return renderChart({\n    data,\n    size: { width, height: 400 }\n  });\n}\n\n\n\n\n\n\n\nCompany Purpose"
+    "text": "About features."
   },
   {
-    "objectID": "tasks.html",
-    "href": "tasks.html",
-    "title": "Tasks",
+    "objectID": "topics/business-impact-principles-values.html",
+    "href": "topics/business-impact-principles-values.html",
+    "title": "Business Impact, Principles/Values",
     "section": "",
-    "text": "About tasks."
+    "text": "About business impact, principles/values."
   },
   {
-    "objectID": "targets.html",
-    "href": "targets.html",
-    "title": "Targets",
+    "objectID": "topics/operations.html",
+    "href": "topics/operations.html",
+    "title": "Operations",
     "section": "",
-    "text": "About targets."
+    "text": "About operations."
   },
   {
-    "objectID": "topics/company-mission.html",
-    "href": "topics/company-mission.html",
-    "title": "Company Mission",
+    "objectID": "topics/company-purpose.html",
+    "href": "topics/company-purpose.html",
+    "title": "Company Purpose",
     "section": "",
-    "text": "About company mission."
+    "text": "About company purpose."
   },
   {
-    "objectID": "topics/portfolio.html",
-    "href": "topics/portfolio.html",
-    "title": "Portfolio",
+    "objectID": "topics/opportunities.html",
+    "href": "topics/opportunities.html",
+    "title": "Oppertunities",
     "section": "",
-    "text": "About portfolio."
+    "text": "About opportunities."
   },
   {
-    "objectID": "topics/objectives.html",
-    "href": "topics/objectives.html",
-    "title": "Objectives",
+    "objectID": "topics/programs.html",
+    "href": "topics/programs.html",
+    "title": "Programs",
     "section": "",
-    "text": "About objectives."
-  },
-  {
-    "objectID": "topics/product-vision.html",
-    "href": "topics/product-vision.html",
-    "title": "Product Vision",
-    "section": "",
-    "text": "About product vision."
-  },
-  {
-    "objectID": "topics/ideas.html",
-    "href": "topics/ideas.html",
-    "title": "Ideas",
-    "section": "",
-    "text": "About ideas."
-  },
-  {
-    "objectID": "topics/product-mission.html",
-    "href": "topics/product-mission.html",
-    "title": "Product Mission",
-    "section": "",
-    "text": "About product mission."
+    "text": "About programs."
   },
   {
     "objectID": "topics/company-values.html",
@@ -126,46 +119,53 @@
     "text": "About company vision."
   },
   {
-    "objectID": "topics/programs.html",
-    "href": "topics/programs.html",
-    "title": "Programs",
+    "objectID": "topics/targets.html",
+    "href": "topics/targets.html",
+    "title": "Targets",
     "section": "",
-    "text": "About programs."
+    "text": "About targets."
   },
   {
-    "objectID": "topics/opportunities.html",
-    "href": "topics/opportunities.html",
-    "title": "Oppertunities",
+    "objectID": "topics/product-mission.html",
+    "href": "topics/product-mission.html",
+    "title": "Product Mission",
     "section": "",
-    "text": "About opportunities."
+    "text": "About product mission."
   },
   {
-    "objectID": "topics/company-purpose.html",
-    "href": "topics/company-purpose.html",
-    "title": "Company Purpose",
+    "objectID": "topics/ideas.html",
+    "href": "topics/ideas.html",
+    "title": "Ideas",
     "section": "",
-    "text": "About company purpose."
+    "text": "About ideas."
   },
   {
-    "objectID": "topics/operations.html",
-    "href": "topics/operations.html",
-    "title": "Operations",
+    "objectID": "topics/product-vision.html",
+    "href": "topics/product-vision.html",
+    "title": "Product Vision",
     "section": "",
-    "text": "About operations."
+    "text": "About product vision."
   },
   {
-    "objectID": "topics/business-impact-principles-values.html",
-    "href": "topics/business-impact-principles-values.html",
-    "title": "Business Impact, Principles/Values",
+    "objectID": "topics/objectives.html",
+    "href": "topics/objectives.html",
+    "title": "Objectives",
     "section": "",
-    "text": "About business impact, principles/values."
+    "text": "About objectives."
   },
   {
-    "objectID": "topics/features.html",
-    "href": "topics/features.html",
-    "title": "Features",
+    "objectID": "topics/portfolio.html",
+    "href": "topics/portfolio.html",
+    "title": "Portfolio",
     "section": "",
-    "text": "About features."
+    "text": "About portfolio."
+  },
+  {
+    "objectID": "topics/company-mission.html",
+    "href": "topics/company-mission.html",
+    "title": "Company Mission",
+    "section": "",
+    "text": "About company mission."
   },
   {
     "objectID": "topics/initiatives-tactics.html",
@@ -175,17 +175,17 @@
     "text": "About initiatives/tactics."
   },
   {
-    "objectID": "SUMMARY.html",
-    "href": "SUMMARY.html",
-    "title": "Table of contents",
+    "objectID": "tasks.html",
+    "href": "tasks.html",
+    "title": "Tasks",
     "section": "",
-    "text": "Table of contents\n\nAgility Game"
+    "text": "About tasks."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Agility Game",
     "section": "",
-    "text": "About this site."
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nimport { renderChart } from \"@trebor/zoomable-voronoi-treemap\"\n\n\n\n\n\n\n\nmd`### Themes`\n\n\n\n\n\n\n\ndata = {\n  const flare = await d3.json(\n    \"https://raw.githubusercontent.com/agility-game/agility-game-themes/main/data/themes.json\"\n  );\n  return d3.hierarchy(flare).sum((d) =&gt; (d.children ? 0 : Math.random()));\n}\n\n\n\n\n\n\n\n__topicsChart = {\n  return renderChart({\n    data,\n    size: { width, height: 400 }\n  });\n}\n\n\n\n\n\n\n\nCompany Purpose"
   }
 ]
