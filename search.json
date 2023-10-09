@@ -77,32 +77,18 @@
     "text": "About company values."
   },
   {
-    "objectID": "topics/epics.html",
-    "href": "topics/epics.html",
-    "title": "Epics",
-    "section": "",
-    "text": "About epics."
-  },
-  {
-    "objectID": "topics/plans.html",
-    "href": "topics/plans.html",
-    "title": "Plans",
-    "section": "",
-    "text": "About plans."
-  },
-  {
-    "objectID": "product-portfolio.html",
-    "href": "product-portfolio.html",
+    "objectID": "topics/product-portfolio.html",
+    "href": "topics/product-portfolio.html",
     "title": "Product Portfolio",
     "section": "",
     "text": "About product protfolio."
   },
   {
-    "objectID": "solutions.html",
-    "href": "solutions.html",
-    "title": "Solutions",
+    "objectID": "topics/goals.html",
+    "href": "topics/goals.html",
+    "title": "Goals",
     "section": "",
-    "text": "About solutions."
+    "text": "About goals."
   },
   {
     "objectID": "strategies.html",
@@ -112,11 +98,25 @@
     "text": "About strategies."
   },
   {
-    "objectID": "topics/goals.html",
-    "href": "topics/goals.html",
-    "title": "Goals",
+    "objectID": "solutions.html",
+    "href": "solutions.html",
+    "title": "Solutions",
     "section": "",
-    "text": "About goals."
+    "text": "About solutions."
+  },
+  {
+    "objectID": "topics/plans.html",
+    "href": "topics/plans.html",
+    "title": "Plans",
+    "section": "",
+    "text": "About plans."
+  },
+  {
+    "objectID": "topics/epics.html",
+    "href": "topics/epics.html",
+    "title": "Epics",
+    "section": "",
+    "text": "About epics."
   },
   {
     "objectID": "topics/company-vision.html",
