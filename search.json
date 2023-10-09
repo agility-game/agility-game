@@ -35,32 +35,25 @@
     "text": "About operations."
   },
   {
-    "objectID": "topics/ideas.html",
-    "href": "topics/ideas.html",
-    "title": "Ideas",
+    "objectID": "topics/opportunities.html",
+    "href": "topics/opportunities.html",
+    "title": "Oppertunities",
     "section": "",
-    "text": "About ideas."
+    "text": "About opportunities."
   },
   {
-    "objectID": "topics/product-mission.html",
-    "href": "topics/product-mission.html",
-    "title": "Product Mission",
+    "objectID": "topics/programs.html",
+    "href": "topics/programs.html",
+    "title": "Programs",
     "section": "",
-    "text": "About product mission."
+    "text": "About programs."
   },
   {
-    "objectID": "topics/targets.html",
-    "href": "topics/targets.html",
-    "title": "Targets",
+    "objectID": "topics/strategies.html",
+    "href": "topics/strategies.html",
+    "title": "Strategies",
     "section": "",
-    "text": "About targets."
-  },
-  {
-    "objectID": "topics/product-portfolio.html",
-    "href": "topics/product-portfolio.html",
-    "title": "Product Portfolio",
-    "section": "",
-    "text": "About product protfolio."
+    "text": "About strategies."
   },
   {
     "objectID": "topics/solutions.html",
@@ -84,11 +77,11 @@
     "text": "About company purpose."
   },
   {
-    "objectID": "themes/company-vision.html",
-    "href": "themes/company-vision.html",
-    "title": "Company Vision",
+    "objectID": "themes/company-values.html",
+    "href": "themes/company-values.html",
+    "title": "Company Values",
     "section": "",
-    "text": "About company vision."
+    "text": "About company values."
   },
   {
     "objectID": "themes/epics.html",
@@ -98,11 +91,25 @@
     "text": "About epics."
   },
   {
-    "objectID": "themes/company-values.html",
-    "href": "themes/company-values.html",
-    "title": "Company Values",
+    "objectID": "themes/goals.html",
+    "href": "themes/goals.html",
+    "title": "Goals",
     "section": "",
-    "text": "About company values."
+    "text": "About goals."
+  },
+  {
+    "objectID": "themes/company-vision.html",
+    "href": "themes/company-vision.html",
+    "title": "Company Vision",
+    "section": "",
+    "text": "About company vision."
+  },
+  {
+    "objectID": "themes/ideas.html",
+    "href": "themes/ideas.html",
+    "title": "Ideas",
+    "section": "",
+    "text": "About ideas."
   },
   {
     "objectID": "themes/business-impact-principles-values.html",
@@ -126,32 +133,25 @@
     "text": "About plans."
   },
   {
-    "objectID": "topics/goals.html",
-    "href": "topics/goals.html",
-    "title": "Goals",
+    "objectID": "topics/product-portfolio.html",
+    "href": "topics/product-portfolio.html",
+    "title": "Product Portfolio",
     "section": "",
-    "text": "About goals."
+    "text": "About product protfolio."
   },
   {
-    "objectID": "topics/strategies.html",
-    "href": "topics/strategies.html",
-    "title": "Strategies",
+    "objectID": "topics/targets.html",
+    "href": "topics/targets.html",
+    "title": "Targets",
     "section": "",
-    "text": "About strategies."
+    "text": "About targets."
   },
   {
-    "objectID": "topics/programs.html",
-    "href": "topics/programs.html",
-    "title": "Programs",
+    "objectID": "topics/product-mission.html",
+    "href": "topics/product-mission.html",
+    "title": "Product Mission",
     "section": "",
-    "text": "About programs."
-  },
-  {
-    "objectID": "topics/opportunities.html",
-    "href": "topics/opportunities.html",
-    "title": "Oppertunities",
-    "section": "",
-    "text": "About opportunities."
+    "text": "About product mission."
   },
   {
     "objectID": "topics/product-vision.html",
