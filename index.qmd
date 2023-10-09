@@ -1,1 +1,39 @@
+---
+title: "Agility Game"
+---
 
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{ojs}
+//| echo: false
+import { renderChart } from "@trebor/zoomable-voronoi-treemap"
+```
+
+```{ojs}
+//| echo: false
+md`### Themes`
+```
+
+```{ojs}
+//| echo: false
+data = {
+  const flare = await d3.json(
+    "https://raw.githubusercontent.com/agility-game/agility-game-themes/main/data/themes.json"
+  );
+  return d3.hierarchy(flare).sum((d) => (d.children ? 0 : Math.random()));
+}
+```
+
+```{ojs}
+//| echo: false
+__topicsChart = {
+  return renderChart({
+    data,
+    size: { width, height: 400 }
+  });
+}
+```
+
+# Company Purpose
