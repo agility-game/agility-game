@@ -56,18 +56,25 @@
     "text": "About product mission."
   },
   {
-    "objectID": "topics/company-values.html",
-    "href": "topics/company-values.html",
-    "title": "Company Values",
+    "objectID": "topics/targets.html",
+    "href": "topics/targets.html",
+    "title": "Targets",
     "section": "",
-    "text": "About company values."
+    "text": "About targets."
   },
   {
-    "objectID": "topics/company-vision.html",
-    "href": "topics/company-vision.html",
-    "title": "Company Vision",
+    "objectID": "topics/themes.html",
+    "href": "topics/themes.html",
+    "title": "Themes (formerly Epics)",
     "section": "",
-    "text": "About company vision."
+    "text": "About themes (formerly epics)."
+  },
+  {
+    "objectID": "topics/strategies.html",
+    "href": "topics/strategies.html",
+    "title": "Strategies",
+    "section": "",
+    "text": "About strategies."
   },
   {
     "objectID": "topics/goals.html",
@@ -82,20 +89,6 @@
     "title": "Plans",
     "section": "",
     "text": "About plans."
-  },
-  {
-    "objectID": "themes/targets.html",
-    "href": "themes/targets.html",
-    "title": "Targets",
-    "section": "",
-    "text": "About targets."
-  },
-  {
-    "objectID": "themes/strategies.html",
-    "href": "themes/strategies.html",
-    "title": "Strategies",
-    "section": "",
-    "text": "About strategies."
   },
   {
     "objectID": "themes/tasks.html",
@@ -119,11 +112,18 @@
     "text": "About product protfolio."
   },
   {
-    "objectID": "topics/themes.html",
-    "href": "topics/themes.html",
-    "title": "Themes (formerly Epics)",
+    "objectID": "topics/company-vision.html",
+    "href": "topics/company-vision.html",
+    "title": "Company Vision",
     "section": "",
-    "text": "About themes (formerly epics)."
+    "text": "About company vision."
+  },
+  {
+    "objectID": "topics/company-values.html",
+    "href": "topics/company-values.html",
+    "title": "Company Values",
+    "section": "",
+    "text": "About company values."
   },
   {
     "objectID": "topics/programs.html",
