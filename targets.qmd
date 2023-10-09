@@ -1,5 +1,0 @@
----
-title: "Targets"
----
-
-About targets.

@@ -1,5 +1,0 @@
----
-title: "Company Purpose"
----
-
-About company purpose.

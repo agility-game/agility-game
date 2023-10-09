@@ -1,5 +1,0 @@
----
-title: "Product Vision"
----
-
-About product vision.
