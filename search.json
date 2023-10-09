@@ -56,60 +56,18 @@
     "text": "About themes (formerly epics)."
   },
   {
-    "objectID": "topics/goals.html",
-    "href": "topics/goals.html",
-    "title": "Goals",
-    "section": "",
-    "text": "About goals."
-  },
-  {
-    "objectID": "themes/stories.html",
-    "href": "themes/stories.html",
-    "title": "Stories",
-    "section": "",
-    "text": "About stories."
-  },
-  {
-    "objectID": "themes/product-vision.html",
-    "href": "themes/product-vision.html",
-    "title": "Product Vision",
-    "section": "",
-    "text": "About product vision."
-  },
-  {
-    "objectID": "themes/targets.html",
-    "href": "themes/targets.html",
-    "title": "Targets",
-    "section": "",
-    "text": "About targets."
-  },
-  {
-    "objectID": "themes/product-portfolio.html",
-    "href": "themes/product-portfolio.html",
+    "objectID": "topics/product-portfolio.html",
+    "href": "topics/product-portfolio.html",
     "title": "Product Portfolio",
     "section": "",
     "text": "About product protfolio."
   },
   {
-    "objectID": "themes/solutions.html",
-    "href": "themes/solutions.html",
-    "title": "Solutions",
+    "objectID": "topics/plans.html",
+    "href": "topics/plans.html",
+    "title": "Plans",
     "section": "",
-    "text": "About solutions."
-  },
-  {
-    "objectID": "themes/strategies.html",
-    "href": "themes/strategies.html",
-    "title": "Strategies",
-    "section": "",
-    "text": "About strategies."
-  },
-  {
-    "objectID": "themes/programs.html",
-    "href": "themes/programs.html",
-    "title": "Programs",
-    "section": "",
-    "text": "About programs."
+    "text": "About plans."
   },
   {
     "objectID": "themes/tasks.html",
@@ -119,11 +77,53 @@
     "text": "About tasks."
   },
   {
-    "objectID": "topics/plans.html",
-    "href": "topics/plans.html",
-    "title": "Plans",
+    "objectID": "themes/programs.html",
+    "href": "themes/programs.html",
+    "title": "Programs",
     "section": "",
-    "text": "About plans."
+    "text": "About programs."
+  },
+  {
+    "objectID": "themes/strategies.html",
+    "href": "themes/strategies.html",
+    "title": "Strategies",
+    "section": "",
+    "text": "About strategies."
+  },
+  {
+    "objectID": "themes/solutions.html",
+    "href": "themes/solutions.html",
+    "title": "Solutions",
+    "section": "",
+    "text": "About solutions."
+  },
+  {
+    "objectID": "themes/targets.html",
+    "href": "themes/targets.html",
+    "title": "Targets",
+    "section": "",
+    "text": "About targets."
+  },
+  {
+    "objectID": "themes/product-vision.html",
+    "href": "themes/product-vision.html",
+    "title": "Product Vision",
+    "section": "",
+    "text": "About product vision."
+  },
+  {
+    "objectID": "themes/stories.html",
+    "href": "themes/stories.html",
+    "title": "Stories",
+    "section": "",
+    "text": "About stories."
+  },
+  {
+    "objectID": "topics/goals.html",
+    "href": "topics/goals.html",
+    "title": "Goals",
+    "section": "",
+    "text": "About goals."
   },
   {
     "objectID": "topics/company-vision.html",
