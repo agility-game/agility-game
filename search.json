@@ -14,18 +14,11 @@
     "text": "Table of contents\n\nAgility Game"
   },
   {
-    "objectID": "topics/stories.html",
-    "href": "topics/stories.html",
-    "title": "Stories",
+    "objectID": "topics/tasks.html",
+    "href": "topics/tasks.html",
+    "title": "Tasks",
     "section": "",
-    "text": "About stories."
-  },
-  {
-    "objectID": "topics/portfolio.html",
-    "href": "topics/portfolio.html",
-    "title": "Portfolio",
-    "section": "",
-    "text": "About portfolio."
+    "text": "About tasks."
   },
   {
     "objectID": "topics/operations.html",
@@ -63,11 +56,18 @@
     "text": "About solutions."
   },
   {
-    "objectID": "themes/features.html",
-    "href": "themes/features.html",
-    "title": "Features",
+    "objectID": "themes/company-mission.html",
+    "href": "themes/company-mission.html",
+    "title": "Company Mission",
     "section": "",
-    "text": "About features."
+    "text": "About company mission."
+  },
+  {
+    "objectID": "themes/business-impact-principles-values.html",
+    "href": "themes/business-impact-principles-values.html",
+    "title": "Business Impact, Principles/Values",
+    "section": "",
+    "text": "About business impact, principles/values."
   },
   {
     "objectID": "themes/company-purpose.html",
@@ -112,18 +112,25 @@
     "text": "About ideas."
   },
   {
-    "objectID": "themes/business-impact-principles-values.html",
-    "href": "themes/business-impact-principles-values.html",
-    "title": "Business Impact, Principles/Values",
+    "objectID": "themes/objectives.html",
+    "href": "themes/objectives.html",
+    "title": "Objectives",
     "section": "",
-    "text": "About business impact, principles/values."
+    "text": "About objectives."
   },
   {
-    "objectID": "themes/company-mission.html",
-    "href": "themes/company-mission.html",
-    "title": "Company Mission",
+    "objectID": "themes/features.html",
+    "href": "themes/features.html",
+    "title": "Features",
     "section": "",
-    "text": "About company mission."
+    "text": "About features."
+  },
+  {
+    "objectID": "themes/initiatives-tactics.html",
+    "href": "themes/initiatives-tactics.html",
+    "title": "Initiatives/Tactics",
+    "section": "",
+    "text": "About initiatives/tactics."
   },
   {
     "objectID": "topics/plans.html",
@@ -161,25 +168,18 @@
     "text": "About product vision."
   },
   {
-    "objectID": "topics/objectives.html",
-    "href": "topics/objectives.html",
-    "title": "Objectives",
+    "objectID": "topics/portfolio.html",
+    "href": "topics/portfolio.html",
+    "title": "Portfolio",
     "section": "",
-    "text": "About objectives."
+    "text": "About portfolio."
   },
   {
-    "objectID": "topics/tasks.html",
-    "href": "topics/tasks.html",
-    "title": "Tasks",
+    "objectID": "topics/stories.html",
+    "href": "topics/stories.html",
+    "title": "Stories",
     "section": "",
-    "text": "About tasks."
-  },
-  {
-    "objectID": "topics/initiatives-tactics.html",
-    "href": "topics/initiatives-tactics.html",
-    "title": "Initiatives/Tactics",
-    "section": "",
-    "text": "About initiatives/tactics."
+    "text": "About stories."
   },
   {
     "objectID": "index.html",
