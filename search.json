@@ -21,18 +21,25 @@
     "text": "About business impact, principles/values."
   },
   {
-    "objectID": "topics/company-values.html",
-    "href": "topics/company-values.html",
-    "title": "Company Values",
+    "objectID": "topics/ideas.html",
+    "href": "topics/ideas.html",
+    "title": "Ideas",
     "section": "",
-    "text": "About company values."
+    "text": "About ideas."
   },
   {
-    "objectID": "topics/company-vision.html",
-    "href": "topics/company-vision.html",
-    "title": "Company Vision",
+    "objectID": "topics/themes.html",
+    "href": "topics/themes.html",
+    "title": "Themes (formerly Epics)",
     "section": "",
-    "text": "About company vision."
+    "text": "About themes (formerly epics)."
+  },
+  {
+    "objectID": "topics/goals.html",
+    "href": "topics/goals.html",
+    "title": "Goals",
+    "section": "",
+    "text": "About goals."
   },
   {
     "objectID": "themes/stories.html",
@@ -56,32 +63,25 @@
     "text": "About operations."
   },
   {
-    "objectID": "themes/ideas.html",
-    "href": "themes/ideas.html",
-    "title": "Ideas",
+    "objectID": "themes/opportunities.html",
+    "href": "themes/opportunities.html",
+    "title": "Oppertunities",
     "section": "",
-    "text": "About ideas."
+    "text": "About opportunities."
   },
   {
-    "objectID": "themes/product-mission.html",
-    "href": "themes/product-mission.html",
-    "title": "Product Mission",
+    "objectID": "themes/programs.html",
+    "href": "themes/programs.html",
+    "title": "Programs",
     "section": "",
-    "text": "About product mission."
+    "text": "About programs."
   },
   {
-    "objectID": "themes/targets.html",
-    "href": "themes/targets.html",
-    "title": "Targets",
+    "objectID": "themes/strategies.html",
+    "href": "themes/strategies.html",
+    "title": "Strategies",
     "section": "",
-    "text": "About targets."
-  },
-  {
-    "objectID": "themes/product-portfolio.html",
-    "href": "themes/product-portfolio.html",
-    "title": "Product Portfolio",
-    "section": "",
-    "text": "About product protfolio."
+    "text": "About strategies."
   },
   {
     "objectID": "themes/solutions.html",
@@ -98,32 +98,25 @@
     "text": "About plans."
   },
   {
-    "objectID": "themes/goals.html",
-    "href": "themes/goals.html",
-    "title": "Goals",
+    "objectID": "themes/product-portfolio.html",
+    "href": "themes/product-portfolio.html",
+    "title": "Product Portfolio",
     "section": "",
-    "text": "About goals."
+    "text": "About product protfolio."
   },
   {
-    "objectID": "themes/strategies.html",
-    "href": "themes/strategies.html",
-    "title": "Strategies",
+    "objectID": "themes/targets.html",
+    "href": "themes/targets.html",
+    "title": "Targets",
     "section": "",
-    "text": "About strategies."
+    "text": "About targets."
   },
   {
-    "objectID": "themes/programs.html",
-    "href": "themes/programs.html",
-    "title": "Programs",
+    "objectID": "themes/product-mission.html",
+    "href": "themes/product-mission.html",
+    "title": "Product Mission",
     "section": "",
-    "text": "About programs."
-  },
-  {
-    "objectID": "themes/opportunities.html",
-    "href": "themes/opportunities.html",
-    "title": "Oppertunities",
-    "section": "",
-    "text": "About opportunities."
+    "text": "About product mission."
   },
   {
     "objectID": "themes/product-vision.html",
@@ -154,11 +147,18 @@
     "text": "About initiatives/tactics."
   },
   {
-    "objectID": "topics/themes.html",
-    "href": "topics/themes.html",
-    "title": "Themes (formerly Epics)",
+    "objectID": "topics/company-vision.html",
+    "href": "topics/company-vision.html",
+    "title": "Company Vision",
     "section": "",
-    "text": "About themes (formerly epics)."
+    "text": "About company vision."
+  },
+  {
+    "objectID": "topics/company-values.html",
+    "href": "topics/company-values.html",
+    "title": "Company Values",
+    "section": "",
+    "text": "About company values."
   },
   {
     "objectID": "topics/company-purpose.html",
