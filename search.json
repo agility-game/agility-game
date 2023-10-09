@@ -91,6 +91,13 @@
     "text": "About goals."
   },
   {
+    "objectID": "topics/plans.html",
+    "href": "topics/plans.html",
+    "title": "Plans",
+    "section": "",
+    "text": "About plans."
+  },
+  {
     "objectID": "strategies.html",
     "href": "strategies.html",
     "title": "Strategies",
@@ -98,18 +105,11 @@
     "text": "About strategies."
   },
   {
-    "objectID": "solutions.html",
-    "href": "solutions.html",
+    "objectID": "topics/solutions.html",
+    "href": "topics/solutions.html",
     "title": "Solutions",
     "section": "",
     "text": "About solutions."
-  },
-  {
-    "objectID": "topics/plans.html",
-    "href": "topics/plans.html",
-    "title": "Plans",
-    "section": "",
-    "text": "About plans."
   },
   {
     "objectID": "topics/epics.html",
