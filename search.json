@@ -21,13 +21,6 @@
     "text": "About tasks."
   },
   {
-    "objectID": "topics/programs.html",
-    "href": "topics/programs.html",
-    "title": "Programs",
-    "section": "",
-    "text": "About programs."
-  },
-  {
     "objectID": "topics/strategies.html",
     "href": "topics/strategies.html",
     "title": "Strategies",
@@ -56,18 +49,25 @@
     "text": "About objectives."
   },
   {
-    "objectID": "themes/company-purpose.html",
-    "href": "themes/company-purpose.html",
-    "title": "Company Purpose",
+    "objectID": "themes/product-vision.html",
+    "href": "themes/product-vision.html",
+    "title": "Product Vision",
     "section": "",
-    "text": "About company purpose."
+    "text": "About product vision."
   },
   {
-    "objectID": "themes/opportunities.html",
-    "href": "themes/opportunities.html",
-    "title": "Oppertunities",
+    "objectID": "themes/ideas.html",
+    "href": "themes/ideas.html",
+    "title": "Ideas",
     "section": "",
-    "text": "About opportunities."
+    "text": "About ideas."
+  },
+  {
+    "objectID": "themes/product-mission.html",
+    "href": "themes/product-mission.html",
+    "title": "Product Mission",
+    "section": "",
+    "text": "About product mission."
   },
   {
     "objectID": "themes/company-values.html",
@@ -112,18 +112,25 @@
     "text": "About company vision."
   },
   {
-    "objectID": "themes/product-mission.html",
-    "href": "themes/product-mission.html",
-    "title": "Product Mission",
+    "objectID": "themes/programs.html",
+    "href": "themes/programs.html",
+    "title": "Programs",
     "section": "",
-    "text": "About product mission."
+    "text": "About programs."
   },
   {
-    "objectID": "themes/ideas.html",
-    "href": "themes/ideas.html",
-    "title": "Ideas",
+    "objectID": "themes/opportunities.html",
+    "href": "themes/opportunities.html",
+    "title": "Oppertunities",
     "section": "",
-    "text": "About ideas."
+    "text": "About opportunities."
+  },
+  {
+    "objectID": "themes/company-purpose.html",
+    "href": "themes/company-purpose.html",
+    "title": "Company Purpose",
+    "section": "",
+    "text": "About company purpose."
   },
   {
     "objectID": "themes/operations.html",
@@ -166,13 +173,6 @@
     "title": "Targets",
     "section": "",
     "text": "About targets."
-  },
-  {
-    "objectID": "topics/product-vision.html",
-    "href": "topics/product-vision.html",
-    "title": "Product Vision",
-    "section": "",
-    "text": "About product vision."
   },
   {
     "objectID": "topics/stories.html",
