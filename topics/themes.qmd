@@ -1,5 +1,0 @@
----
-title: "Themes (formerly Epics)"
----
-
-About themes (formerly epics).
