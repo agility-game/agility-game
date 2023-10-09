@@ -20,7 +20,7 @@ md`### Themes`
 //| echo: false
 data = {
   const flare = await d3.json(
-    "https://raw.githubusercontent.com/agility-game/agility-game-themes/main/data/themes.json"
+    "https://raw.githubusercontent.com/agility-game/agility-game-topics/main/data/topics.json"
   );
   return d3.hierarchy(flare).sum((d) => (d.children ? 0 : Math.random()));
 }
