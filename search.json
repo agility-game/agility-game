@@ -7,25 +7,25 @@
     "text": "About this site."
   },
   {
-    "objectID": "SUMMARY.html",
-    "href": "SUMMARY.html",
-    "title": "Table of contents",
+    "objectID": "topics/initiatives-tactics.html",
+    "href": "topics/initiatives-tactics.html",
+    "title": "Initiatives/Tactics",
     "section": "",
-    "text": "Table of contents\n\nAgility Game"
+    "text": "About initiatives/tactics."
   },
   {
-    "objectID": "topics/stories.html",
-    "href": "topics/stories.html",
-    "title": "Stories",
+    "objectID": "topics/company-mission.html",
+    "href": "topics/company-mission.html",
+    "title": "Company Mission",
     "section": "",
-    "text": "About stories."
+    "text": "About company mission."
   },
   {
-    "objectID": "topics/features.html",
-    "href": "topics/features.html",
-    "title": "Features",
+    "objectID": "topics/tasks.html",
+    "href": "topics/tasks.html",
+    "title": "Tasks",
     "section": "",
-    "text": "About features."
+    "text": "About tasks."
   },
   {
     "objectID": "topics/business-impact-principles-values.html",
@@ -70,32 +70,18 @@
     "text": "About company values."
   },
   {
-    "objectID": "topics/product-portfolio.html",
-    "href": "topics/product-portfolio.html",
-    "title": "Product Portfolio",
-    "section": "",
-    "text": "About product protfolio."
-  },
-  {
-    "objectID": "topics/goals.html",
-    "href": "topics/goals.html",
-    "title": "Goals",
-    "section": "",
-    "text": "About goals."
-  },
-  {
-    "objectID": "topics/plans.html",
-    "href": "topics/plans.html",
-    "title": "Plans",
-    "section": "",
-    "text": "About plans."
-  },
-  {
-    "objectID": "strategies.html",
-    "href": "strategies.html",
+    "objectID": "topics/strategies.html",
+    "href": "topics/strategies.html",
     "title": "Strategies",
     "section": "",
     "text": "About strategies."
+  },
+  {
+    "objectID": "topics/epics.html",
+    "href": "topics/epics.html",
+    "title": "Epics",
+    "section": "",
+    "text": "About epics."
   },
   {
     "objectID": "topics/solutions.html",
@@ -105,11 +91,25 @@
     "text": "About solutions."
   },
   {
-    "objectID": "topics/epics.html",
-    "href": "topics/epics.html",
-    "title": "Epics",
+    "objectID": "topics/plans.html",
+    "href": "topics/plans.html",
+    "title": "Plans",
     "section": "",
-    "text": "About epics."
+    "text": "About plans."
+  },
+  {
+    "objectID": "topics/goals.html",
+    "href": "topics/goals.html",
+    "title": "Goals",
+    "section": "",
+    "text": "About goals."
+  },
+  {
+    "objectID": "topics/product-portfolio.html",
+    "href": "topics/product-portfolio.html",
+    "title": "Product Portfolio",
+    "section": "",
+    "text": "About product protfolio."
   },
   {
     "objectID": "topics/company-vision.html",
@@ -161,25 +161,25 @@
     "text": "About portfolio."
   },
   {
-    "objectID": "topics/company-mission.html",
-    "href": "topics/company-mission.html",
-    "title": "Company Mission",
+    "objectID": "topics/features.html",
+    "href": "topics/features.html",
+    "title": "Features",
     "section": "",
-    "text": "About company mission."
+    "text": "About features."
   },
   {
-    "objectID": "topics/initiatives-tactics.html",
-    "href": "topics/initiatives-tactics.html",
-    "title": "Initiatives/Tactics",
+    "objectID": "topics/stories.html",
+    "href": "topics/stories.html",
+    "title": "Stories",
     "section": "",
-    "text": "About initiatives/tactics."
+    "text": "About stories."
   },
   {
-    "objectID": "tasks.html",
-    "href": "tasks.html",
-    "title": "Tasks",
+    "objectID": "SUMMARY.html",
+    "href": "SUMMARY.html",
+    "title": "Table of contents",
     "section": "",
-    "text": "About tasks."
+    "text": "Table of contents\n\nAgility Game"
   },
   {
     "objectID": "index.html",
