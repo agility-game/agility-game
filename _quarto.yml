@@ -9,30 +9,62 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - company-purpose.qmd
-      - company-vision.qmd
-      - company-mission.qmd
-      - company-values.qmd
-      - portfolio.qmd
-      - programs.qmd
-      - plans.qmd
-      - product-portfolio.qmd
-      - product-vision.qmd
-      - business-impact-principles-values.qmd
-      - product-mission.qmd
-      - goals.qmd
-      - objectives.qmd
-      - targets.qmd
-      - strategies.qmd
-      - initiatives-tactics.qmd
-      - opportunities.qmd
-      - ideas.qmd
-      - solutions.qmd
-      - epics.qmd
-      - features.qmd
-      - stories.qmd
-      - tasks.qmd
-      - operations.qmd
+      - topics.qmd
+  sidebar:
+    - title: "Home"
+      style: "docked"
+      background: light
+      contents:
+        - text: "---"
+        - topics.qmd        
+        - text: "---"
+        - topics/company-purpose.qmd
+        - text: "---"       
+        - topics/company-vision.qmd
+        - text: "---"
+        - topics/company-mission.qmd      
+        - text: "---"
+        - topics/company-values.qmd
+        - text: "---"
+        - topics/portfolio.qmd
+        - text: "---"
+        - topics/programs.qmd
+        - text: "---"
+        - topics/plans.qmd
+        - text: "---"
+        - topics/product-portfolio.qmd
+        - text: "---"
+        - topics/product-vision.qmd
+        - text: "---"
+        - topics/business-impact-principles-values.qmd
+        - text: "---"
+        - topics/product-mission.qmd
+        - text: "---"
+        - topics/goals.qmd
+        - text: "---"
+        - topics/objectives.qmd
+        - text: "---"
+        - topics/targets.qmd
+        - text: "---"
+        - topics/strategies.qmd
+        - text: "---"
+        - topics/initiatives-tactics.qmd
+        - text: "---"
+        - topics/opportunities.qmd
+        - text: "---"
+        - topics/ideas.qmd
+        - text: "---"
+        - topics/solutions.qmd
+        - text: "---"
+        - topics/epics.qmd
+        - text: "---"
+        - topics/features.qmd
+        - text: "---"
+        - topics/stories.qmd
+        - text: "---"
+        - topics/tasks.qmd
+        - text: "---"
+        - topics/operations.qmd
 
 format:
   html:
