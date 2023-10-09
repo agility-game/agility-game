@@ -14,20 +14,6 @@
     "text": "Table of contents\n\nAgility Game"
   },
   {
-    "objectID": "topics/tasks.html",
-    "href": "topics/tasks.html",
-    "title": "Tasks",
-    "section": "",
-    "text": "About tasks."
-  },
-  {
-    "objectID": "topics/strategies.html",
-    "href": "topics/strategies.html",
-    "title": "Strategies",
-    "section": "",
-    "text": "About strategies."
-  },
-  {
     "objectID": "themes/initiatives-tactics.html",
     "href": "themes/initiatives-tactics.html",
     "title": "Initiatives/Tactics",
@@ -35,11 +21,18 @@
     "text": "About initiatives/tactics."
   },
   {
-    "objectID": "themes/features.html",
-    "href": "themes/features.html",
-    "title": "Features",
+    "objectID": "themes/company-mission.html",
+    "href": "themes/company-mission.html",
+    "title": "Company Mission",
     "section": "",
-    "text": "About features."
+    "text": "About company mission."
+  },
+  {
+    "objectID": "themes/tasks.html",
+    "href": "themes/tasks.html",
+    "title": "Tasks",
+    "section": "",
+    "text": "About tasks."
   },
   {
     "objectID": "themes/business-impact-principles-values.html",
@@ -77,11 +70,18 @@
     "text": "About programs."
   },
   {
-    "objectID": "themes/company-vision.html",
-    "href": "themes/company-vision.html",
-    "title": "Company Vision",
+    "objectID": "themes/company-values.html",
+    "href": "themes/company-values.html",
+    "title": "Company Values",
     "section": "",
-    "text": "About company vision."
+    "text": "About company values."
+  },
+  {
+    "objectID": "themes/strategies.html",
+    "href": "themes/strategies.html",
+    "title": "Strategies",
+    "section": "",
+    "text": "About strategies."
   },
   {
     "objectID": "themes/epics.html",
@@ -119,11 +119,18 @@
     "text": "About product protfolio."
   },
   {
-    "objectID": "themes/company-values.html",
-    "href": "themes/company-values.html",
-    "title": "Company Values",
+    "objectID": "themes/company-vision.html",
+    "href": "themes/company-vision.html",
+    "title": "Company Vision",
     "section": "",
-    "text": "About company values."
+    "text": "About company vision."
+  },
+  {
+    "objectID": "themes/targets.html",
+    "href": "themes/targets.html",
+    "title": "Targets",
+    "section": "",
+    "text": "About targets."
   },
   {
     "objectID": "themes/product-mission.html",
@@ -161,22 +168,15 @@
     "text": "About portfolio."
   },
   {
-    "objectID": "themes/company-mission.html",
-    "href": "themes/company-mission.html",
-    "title": "Company Mission",
+    "objectID": "themes/features.html",
+    "href": "themes/features.html",
+    "title": "Features",
     "section": "",
-    "text": "About company mission."
+    "text": "About features."
   },
   {
-    "objectID": "topics/targets.html",
-    "href": "topics/targets.html",
-    "title": "Targets",
-    "section": "",
-    "text": "About targets."
-  },
-  {
-    "objectID": "topics/stories.html",
-    "href": "topics/stories.html",
+    "objectID": "themes/stories.html",
+    "href": "themes/stories.html",
     "title": "Stories",
     "section": "",
     "text": "About stories."
