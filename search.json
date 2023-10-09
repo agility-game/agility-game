@@ -28,39 +28,39 @@
     "text": "About operations."
   },
   {
-    "objectID": "ideas.html",
-    "href": "ideas.html",
-    "title": "Ideas",
+    "objectID": "opportunities.html",
+    "href": "opportunities.html",
+    "title": "Oppertunities",
     "section": "",
-    "text": "About ideas."
+    "text": "About opportunities."
   },
   {
-    "objectID": "product-mission.html",
-    "href": "product-mission.html",
-    "title": "Product Mission",
+    "objectID": "SUMMARY.html",
+    "href": "SUMMARY.html",
+    "title": "Table of contents",
     "section": "",
-    "text": "About product mission."
+    "text": "Table of contents\n\nAgility Game"
   },
   {
-    "objectID": "programs.html",
-    "href": "programs.html",
-    "title": "Programs",
+    "objectID": "targets.html",
+    "href": "targets.html",
+    "title": "Targets",
     "section": "",
-    "text": "About programs."
+    "text": "About targets."
   },
   {
-    "objectID": "topics/company-mission.html",
-    "href": "topics/company-mission.html",
-    "title": "Company Mission",
+    "objectID": "topics/features.html",
+    "href": "topics/features.html",
+    "title": "Features",
     "section": "",
-    "text": "About company mission."
+    "text": "About features."
   },
   {
-    "objectID": "topics/business-impact-principles-values.html",
-    "href": "topics/business-impact-principles-values.html",
-    "title": "Business Impact, Principles/Values",
+    "objectID": "topics/company-purpose.html",
+    "href": "topics/company-purpose.html",
+    "title": "Company Purpose",
     "section": "",
-    "text": "About business impact, principles/values."
+    "text": "About company purpose."
   },
   {
     "objectID": "topics/company-values.html",
@@ -77,11 +77,11 @@
     "text": "About epics."
   },
   {
-    "objectID": "product-portfolio.html",
-    "href": "product-portfolio.html",
-    "title": "Product Portfolio",
+    "objectID": "strategies.html",
+    "href": "strategies.html",
+    "title": "Strategies",
     "section": "",
-    "text": "About product protfolio."
+    "text": "About strategies."
   },
   {
     "objectID": "solutions.html",
@@ -98,18 +98,18 @@
     "text": "About plans."
   },
   {
-    "objectID": "goals.html",
-    "href": "goals.html",
+    "objectID": "product-portfolio.html",
+    "href": "product-portfolio.html",
+    "title": "Product Portfolio",
+    "section": "",
+    "text": "About product protfolio."
+  },
+  {
+    "objectID": "topics/goals.html",
+    "href": "topics/goals.html",
     "title": "Goals",
     "section": "",
     "text": "About goals."
-  },
-  {
-    "objectID": "strategies.html",
-    "href": "strategies.html",
-    "title": "Strategies",
-    "section": "",
-    "text": "About strategies."
   },
   {
     "objectID": "topics/company-vision.html",
@@ -119,39 +119,39 @@
     "text": "About company vision."
   },
   {
-    "objectID": "topics/company-purpose.html",
-    "href": "topics/company-purpose.html",
-    "title": "Company Purpose",
+    "objectID": "topics/ideas.html",
+    "href": "topics/ideas.html",
+    "title": "Ideas",
     "section": "",
-    "text": "About company purpose."
+    "text": "About ideas."
   },
   {
-    "objectID": "topics/features.html",
-    "href": "topics/features.html",
-    "title": "Features",
+    "objectID": "topics/business-impact-principles-values.html",
+    "href": "topics/business-impact-principles-values.html",
+    "title": "Business Impact, Principles/Values",
     "section": "",
-    "text": "About features."
+    "text": "About business impact, principles/values."
   },
   {
-    "objectID": "targets.html",
-    "href": "targets.html",
-    "title": "Targets",
+    "objectID": "topics/company-mission.html",
+    "href": "topics/company-mission.html",
+    "title": "Company Mission",
     "section": "",
-    "text": "About targets."
+    "text": "About company mission."
   },
   {
-    "objectID": "SUMMARY.html",
-    "href": "SUMMARY.html",
-    "title": "Table of contents",
+    "objectID": "programs.html",
+    "href": "programs.html",
+    "title": "Programs",
     "section": "",
-    "text": "Table of contents\n\nAgility Game"
+    "text": "About programs."
   },
   {
-    "objectID": "opportunities.html",
-    "href": "opportunities.html",
-    "title": "Oppertunities",
+    "objectID": "product-mission.html",
+    "href": "product-mission.html",
+    "title": "Product Mission",
     "section": "",
-    "text": "About opportunities."
+    "text": "About product mission."
   },
   {
     "objectID": "product-vision.html",
