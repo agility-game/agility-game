@@ -14,53 +14,46 @@
     "text": "About this site."
   },
   {
-    "objectID": "features.html",
-    "href": "features.html",
-    "title": "Features",
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Portfolio",
     "section": "",
-    "text": "About features."
+    "text": "About portfolio."
   },
   {
-    "objectID": "tasks.html",
-    "href": "tasks.html",
-    "title": "Tasks",
+    "objectID": "operations.html",
+    "href": "operations.html",
+    "title": "Operations",
     "section": "",
-    "text": "About tasks."
+    "text": "About operations."
   },
   {
-    "objectID": "objectives.html",
-    "href": "objectives.html",
-    "title": "Objectives",
+    "objectID": "ideas.html",
+    "href": "ideas.html",
+    "title": "Ideas",
     "section": "",
-    "text": "About objectives."
+    "text": "About ideas."
   },
   {
-    "objectID": "product-vision.html",
-    "href": "product-vision.html",
-    "title": "Product Vision",
+    "objectID": "product-mission.html",
+    "href": "product-mission.html",
+    "title": "Product Mission",
     "section": "",
-    "text": "About product vision."
+    "text": "About product mission."
   },
   {
-    "objectID": "opportunities.html",
-    "href": "opportunities.html",
-    "title": "Oppertunities",
+    "objectID": "programs.html",
+    "href": "programs.html",
+    "title": "Programs",
     "section": "",
-    "text": "About opportunities."
+    "text": "About programs."
   },
   {
-    "objectID": "SUMMARY.html",
-    "href": "SUMMARY.html",
-    "title": "Table of contents",
+    "objectID": "topics/company-mission.html",
+    "href": "topics/company-mission.html",
+    "title": "Company Mission",
     "section": "",
-    "text": "Table of contents\n\nAgility Game"
-  },
-  {
-    "objectID": "targets.html",
-    "href": "targets.html",
-    "title": "Targets",
-    "section": "",
-    "text": "About targets."
+    "text": "About company mission."
   },
   {
     "objectID": "topics/business-impact-principles-values.html",
@@ -77,18 +70,18 @@
     "text": "About company values."
   },
   {
-    "objectID": "strategies.html",
-    "href": "strategies.html",
-    "title": "Strategies",
-    "section": "",
-    "text": "About strategies."
-  },
-  {
-    "objectID": "epics.html",
-    "href": "epics.html",
+    "objectID": "topics/epics.html",
+    "href": "topics/epics.html",
     "title": "Epics",
     "section": "",
     "text": "About epics."
+  },
+  {
+    "objectID": "product-portfolio.html",
+    "href": "product-portfolio.html",
+    "title": "Product Portfolio",
+    "section": "",
+    "text": "About product protfolio."
   },
   {
     "objectID": "solutions.html",
@@ -112,11 +105,11 @@
     "text": "About goals."
   },
   {
-    "objectID": "product-portfolio.html",
-    "href": "product-portfolio.html",
-    "title": "Product Portfolio",
+    "objectID": "strategies.html",
+    "href": "strategies.html",
+    "title": "Strategies",
     "section": "",
-    "text": "About product protfolio."
+    "text": "About strategies."
   },
   {
     "objectID": "topics/company-vision.html",
@@ -133,46 +126,53 @@
     "text": "About company purpose."
   },
   {
-    "objectID": "topics/company-mission.html",
-    "href": "topics/company-mission.html",
-    "title": "Company Mission",
+    "objectID": "topics/features.html",
+    "href": "topics/features.html",
+    "title": "Features",
     "section": "",
-    "text": "About company mission."
+    "text": "About features."
   },
   {
-    "objectID": "programs.html",
-    "href": "programs.html",
-    "title": "Programs",
+    "objectID": "targets.html",
+    "href": "targets.html",
+    "title": "Targets",
     "section": "",
-    "text": "About programs."
+    "text": "About targets."
   },
   {
-    "objectID": "product-mission.html",
-    "href": "product-mission.html",
-    "title": "Product Mission",
+    "objectID": "SUMMARY.html",
+    "href": "SUMMARY.html",
+    "title": "Table of contents",
     "section": "",
-    "text": "About product mission."
+    "text": "Table of contents\n\nAgility Game"
   },
   {
-    "objectID": "ideas.html",
-    "href": "ideas.html",
-    "title": "Ideas",
+    "objectID": "opportunities.html",
+    "href": "opportunities.html",
+    "title": "Oppertunities",
     "section": "",
-    "text": "About ideas."
+    "text": "About opportunities."
   },
   {
-    "objectID": "operations.html",
-    "href": "operations.html",
-    "title": "Operations",
+    "objectID": "product-vision.html",
+    "href": "product-vision.html",
+    "title": "Product Vision",
     "section": "",
-    "text": "About operations."
+    "text": "About product vision."
   },
   {
-    "objectID": "portfolio.html",
-    "href": "portfolio.html",
-    "title": "Portfolio",
+    "objectID": "objectives.html",
+    "href": "objectives.html",
+    "title": "Objectives",
     "section": "",
-    "text": "About portfolio."
+    "text": "About objectives."
+  },
+  {
+    "objectID": "tasks.html",
+    "href": "tasks.html",
+    "title": "Tasks",
+    "section": "",
+    "text": "About tasks."
   },
   {
     "objectID": "index.html",
