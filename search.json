@@ -7,13 +7,6 @@
     "text": "About this site."
   },
   {
-    "objectID": "SUMMARY.html",
-    "href": "SUMMARY.html",
-    "title": "Table of contents",
-    "section": "",
-    "text": "Table of contents\n\nAgility Game"
-  },
-  {
     "objectID": "themes/initiatives-tactics.html",
     "href": "themes/initiatives-tactics.html",
     "title": "Initiatives/Tactics",
@@ -180,6 +173,13 @@
     "title": "Stories",
     "section": "",
     "text": "About stories."
+  },
+  {
+    "objectID": "SUMMARY.html",
+    "href": "SUMMARY.html",
+    "title": "Table of contents",
+    "section": "",
+    "text": "Table of contents\n\nAgility Game"
   },
   {
     "objectID": "index.html",
