@@ -372,7 +372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="15" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`### Themes`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="15" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`### Topics`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
@@ -413,7 +413,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"import { renderChart } from \"@trebor/zoomable-voronoi-treemap\"\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"md`### Themes`\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"data = {\n  const flare = await d3.json(\n    \"https://raw.githubusercontent.com/agility-game/agility-game-topics/main/data/topics.json\"\n  );\n  return d3.hierarchy(flare).sum((d) => (d.children ? 0 : Math.random()));\n}\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"__topicsChart = {\n  return renderChart({\n    data,\n    size: { width, height: 400 }\n  });\n}\n"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"import { renderChart } from \"@trebor/zoomable-voronoi-treemap\"\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"md`### Topics`\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"data = {\n  const flare = await d3.json(\n    \"https://raw.githubusercontent.com/agility-game/agility-game-topics/main/data/topics.json\"\n  );\n  return d3.hierarchy(flare).sum((d) => (d.children ? 0 : Math.random()));\n}\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"__topicsChart = {\n  return renderChart({\n    data,\n    size: { width, height: 400 }\n  });\n}\n"}]}
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
