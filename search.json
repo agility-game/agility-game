@@ -42,39 +42,39 @@
     "text": "About ideas."
   },
   {
-    "objectID": "topics/company-values.html",
-    "href": "topics/company-values.html",
-    "title": "Company Values",
-    "section": "",
-    "text": "About company values."
-  },
-  {
-    "objectID": "topics/company-vision.html",
-    "href": "topics/company-vision.html",
-    "title": "Company Vision",
-    "section": "",
-    "text": "About company vision."
-  },
-  {
-    "objectID": "topics/plans.html",
-    "href": "topics/plans.html",
-    "title": "Plans",
-    "section": "",
-    "text": "About plans."
-  },
-  {
-    "objectID": "themes/tasks.html",
-    "href": "themes/tasks.html",
-    "title": "Tasks",
-    "section": "",
-    "text": "About tasks."
-  },
-  {
-    "objectID": "themes/product-mission.html",
-    "href": "themes/product-mission.html",
+    "objectID": "topics/product-mission.html",
+    "href": "topics/product-mission.html",
     "title": "Product Mission",
     "section": "",
     "text": "About product mission."
+  },
+  {
+    "objectID": "topics/themes.html",
+    "href": "topics/themes.html",
+    "title": "Themes (formerly Epics)",
+    "section": "",
+    "text": "About themes (formerly epics)."
+  },
+  {
+    "objectID": "topics/goals.html",
+    "href": "topics/goals.html",
+    "title": "Goals",
+    "section": "",
+    "text": "About goals."
+  },
+  {
+    "objectID": "themes/stories.html",
+    "href": "themes/stories.html",
+    "title": "Stories",
+    "section": "",
+    "text": "About stories."
+  },
+  {
+    "objectID": "themes/product-vision.html",
+    "href": "themes/product-vision.html",
+    "title": "Product Vision",
+    "section": "",
+    "text": "About product vision."
   },
   {
     "objectID": "themes/targets.html",
@@ -112,32 +112,32 @@
     "text": "About programs."
   },
   {
-    "objectID": "themes/product-vision.html",
-    "href": "themes/product-vision.html",
-    "title": "Product Vision",
+    "objectID": "themes/tasks.html",
+    "href": "themes/tasks.html",
+    "title": "Tasks",
     "section": "",
-    "text": "About product vision."
+    "text": "About tasks."
   },
   {
-    "objectID": "themes/stories.html",
-    "href": "themes/stories.html",
-    "title": "Stories",
+    "objectID": "topics/plans.html",
+    "href": "topics/plans.html",
+    "title": "Plans",
     "section": "",
-    "text": "About stories."
+    "text": "About plans."
   },
   {
-    "objectID": "topics/goals.html",
-    "href": "topics/goals.html",
-    "title": "Goals",
+    "objectID": "topics/company-vision.html",
+    "href": "topics/company-vision.html",
+    "title": "Company Vision",
     "section": "",
-    "text": "About goals."
+    "text": "About company vision."
   },
   {
-    "objectID": "topics/themes.html",
-    "href": "topics/themes.html",
-    "title": "Themes (formerly Epics)",
+    "objectID": "topics/company-values.html",
+    "href": "topics/company-values.html",
+    "title": "Company Values",
     "section": "",
-    "text": "About themes (formerly epics)."
+    "text": "About company values."
   },
   {
     "objectID": "topics/opportunities.html",
