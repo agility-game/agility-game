@@ -35,60 +35,53 @@
     "text": "About strategies."
   },
   {
-    "objectID": "topics/solutions.html",
-    "href": "topics/solutions.html",
-    "title": "Solutions",
+    "objectID": "themes/company-mission.html",
+    "href": "themes/company-mission.html",
+    "title": "Company Mission",
     "section": "",
-    "text": "About solutions."
+    "text": "About company mission."
   },
   {
-    "objectID": "themes/initiatives-tactics.html",
-    "href": "themes/initiatives-tactics.html",
-    "title": "Initiatives/Tactics",
+    "objectID": "themes/portfolio.html",
+    "href": "themes/portfolio.html",
+    "title": "Portfolio",
     "section": "",
-    "text": "About initiatives/tactics."
+    "text": "About portfolio."
   },
   {
-    "objectID": "themes/features.html",
-    "href": "themes/features.html",
-    "title": "Features",
+    "objectID": "themes/objectives.html",
+    "href": "themes/objectives.html",
+    "title": "Objectives",
     "section": "",
-    "text": "About features."
+    "text": "About objectives."
   },
   {
-    "objectID": "themes/business-impact-principles-values.html",
-    "href": "themes/business-impact-principles-values.html",
-    "title": "Business Impact, Principles/Values",
+    "objectID": "themes/company-purpose.html",
+    "href": "themes/company-purpose.html",
+    "title": "Company Purpose",
     "section": "",
-    "text": "About business impact, principles/values."
+    "text": "About company purpose."
   },
   {
-    "objectID": "themes/operations.html",
-    "href": "themes/operations.html",
-    "title": "Operations",
+    "objectID": "themes/opportunities.html",
+    "href": "themes/opportunities.html",
+    "title": "Oppertunities",
     "section": "",
-    "text": "About operations."
+    "text": "About opportunities."
   },
   {
-    "objectID": "themes/ideas.html",
-    "href": "themes/ideas.html",
-    "title": "Ideas",
+    "objectID": "themes/company-values.html",
+    "href": "themes/company-values.html",
+    "title": "Company Values",
     "section": "",
-    "text": "About ideas."
+    "text": "About company values."
   },
   {
-    "objectID": "themes/product-mission.html",
-    "href": "themes/product-mission.html",
-    "title": "Product Mission",
+    "objectID": "themes/product-portfolio.html",
+    "href": "themes/product-portfolio.html",
+    "title": "Product Portfolio",
     "section": "",
-    "text": "About product mission."
-  },
-  {
-    "objectID": "themes/company-vision.html",
-    "href": "themes/company-vision.html",
-    "title": "Company Vision",
-    "section": "",
-    "text": "About company vision."
+    "text": "About product protfolio."
   },
   {
     "objectID": "themes/goals.html",
@@ -112,53 +105,60 @@
     "text": "About epics."
   },
   {
-    "objectID": "themes/company-values.html",
-    "href": "themes/company-values.html",
-    "title": "Company Values",
+    "objectID": "themes/company-vision.html",
+    "href": "themes/company-vision.html",
+    "title": "Company Vision",
     "section": "",
-    "text": "About company values."
+    "text": "About company vision."
   },
   {
-    "objectID": "themes/opportunities.html",
-    "href": "themes/opportunities.html",
-    "title": "Oppertunities",
+    "objectID": "themes/product-mission.html",
+    "href": "themes/product-mission.html",
+    "title": "Product Mission",
     "section": "",
-    "text": "About opportunities."
+    "text": "About product mission."
   },
   {
-    "objectID": "themes/company-purpose.html",
-    "href": "themes/company-purpose.html",
-    "title": "Company Purpose",
+    "objectID": "themes/ideas.html",
+    "href": "themes/ideas.html",
+    "title": "Ideas",
     "section": "",
-    "text": "About company purpose."
+    "text": "About ideas."
   },
   {
-    "objectID": "themes/objectives.html",
-    "href": "themes/objectives.html",
-    "title": "Objectives",
+    "objectID": "themes/operations.html",
+    "href": "themes/operations.html",
+    "title": "Operations",
     "section": "",
-    "text": "About objectives."
+    "text": "About operations."
   },
   {
-    "objectID": "themes/portfolio.html",
-    "href": "themes/portfolio.html",
-    "title": "Portfolio",
+    "objectID": "themes/business-impact-principles-values.html",
+    "href": "themes/business-impact-principles-values.html",
+    "title": "Business Impact, Principles/Values",
     "section": "",
-    "text": "About portfolio."
+    "text": "About business impact, principles/values."
   },
   {
-    "objectID": "themes/company-mission.html",
-    "href": "themes/company-mission.html",
-    "title": "Company Mission",
+    "objectID": "themes/features.html",
+    "href": "themes/features.html",
+    "title": "Features",
     "section": "",
-    "text": "About company mission."
+    "text": "About features."
   },
   {
-    "objectID": "topics/product-portfolio.html",
-    "href": "topics/product-portfolio.html",
-    "title": "Product Portfolio",
+    "objectID": "themes/initiatives-tactics.html",
+    "href": "themes/initiatives-tactics.html",
+    "title": "Initiatives/Tactics",
     "section": "",
-    "text": "About product protfolio."
+    "text": "About initiatives/tactics."
+  },
+  {
+    "objectID": "topics/solutions.html",
+    "href": "topics/solutions.html",
+    "title": "Solutions",
+    "section": "",
+    "text": "About solutions."
   },
   {
     "objectID": "topics/targets.html",
