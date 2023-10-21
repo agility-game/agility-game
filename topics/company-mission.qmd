@@ -3,3 +3,5 @@ title: "Company Mission"
 ---
 
 About company mission.
+
+![Company Mission](../images/company-mission.svg)
