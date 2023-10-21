@@ -3,3 +3,5 @@ title: "Product Vision"
 ---
 
 About product vision.
+
+![Product Vision](../images/product-vision.svg)
