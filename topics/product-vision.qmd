@@ -4,4 +4,4 @@ title: "Product Vision"
 
 About product vision.
 
-![Product Vision](../images/product-vision.svg)
+<img src="./images/product-vision.svg" width="100" height="100" alt="Product Vision">
