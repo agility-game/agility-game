@@ -3,3 +3,5 @@ title: "Company Values"
 ---
 
 About company values.
+
+![Company Values](../images/company-values.svg)
