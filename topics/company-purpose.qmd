@@ -3,3 +3,5 @@ title: "Company Purpose"
 ---
 
 About company purpose.
+
+![Company Purpose](../images/company-purpose.svg)
