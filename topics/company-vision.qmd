@@ -3,3 +3,5 @@ title: "Company Vision"
 ---
 
 About company vision.
+
+![Company Vision](../images/company-vision.svg)
