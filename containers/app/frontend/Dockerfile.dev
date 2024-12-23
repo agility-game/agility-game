@@ -1,0 +1,35 @@
+FROM node:20.11.1-bullseye-slim
+
+# Add error handling and verbose output
+ENV NPM_CONFIG_LOGLEVEL=verbose
+ENV NODE_OPTIONS="--max-old-space-size=4096"
+
+# Update and install required packages
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    git \
+    python3 \
+    build-essential && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install specific versions of npm and pnpm
+RUN npm install -g npm@10.2.4 && \
+    npm install -g pnpm@8.15.1
+
+WORKDIR /usr/src/app
+
+# Copy package files
+COPY package.json ./
+COPY pnpm-lock.yaml ./
+
+# Install dependencies with increased timeout
+RUN pnpm install --fetch-timeout 100000
+
+# Copy source files
+COPY . .
+
+# Expose port
+EXPOSE 3000
+
+# Start development server
+CMD ["pnpm", "dev", "--host"]

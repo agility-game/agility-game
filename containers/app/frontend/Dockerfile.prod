@@ -1,0 +1,40 @@
+# ARG IMAGE_REPOSITORY
+# See https://pnpm.io/docker
+# See also https://www.youtube.com/watch?v=NLjolI9FwCU
+# FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_DIVISION}node:20-slim AS base
+FROM node:20-slim AS base
+
+# See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
+# ARG PROXY_USER
+# ARG PROXY_PASSWORD
+# ARG PROXY_FQDN
+# ARG PROXY_PORT
+
+# ENV PROXY='http://"${PROXY_USER}:${PROXY_PASSWORD}"@${PROXY_FQDN}:${PROXY_PORT}'
+# ENV HTTP_PROXY='http://"${PROXY_USER}:${PROXY_PASSWORD}"@${PROXY_FQDN}:${PROXY_PORT}'
+# ENV HTTPS_PROXY='http://"${PROXY_USER}:${PROXY_PASSWORD}"@${PROXY_FQDN}:${PROXY_PORT}'
+
+# Hardcoded, make dynamic
+# ENV STRICT-SSL=false
+# ENV REGISTRY=http://registry.npmjs.org/
+
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
+FROM base AS prod
+
+COPY ./pnpm-lock.yaml /app
+WORKDIR /usr/src/app
+RUN pnpm fetch --prod
+
+COPY ./ /usr/src/app
+# RUN pnpm --proxy http://"${PROXY_USER}:${PROXY_PASSWORD}"@${PROXY_FQDN}:${PROXY_PORT} install
+RUN pnpm install
+RUN pnpm run build
+
+FROM base
+COPY --from=prod /usr/src/app/node_modules /usr/src/app/node_modules
+COPY --from=prod /usr/src/app/build /usr/src/app/build
+EXPOSE 3000
+CMD [ "pnpm", "start" ]

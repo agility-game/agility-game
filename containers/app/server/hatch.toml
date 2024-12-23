@@ -1,0 +1,52 @@
+[env]
+requires = [
+    "hatch-pip-compile",
+    "hatch-requirements-txt"
+]
+
+[envs.default]
+type = "virtual"
+python = "3.11"
+
+[envs.test]
+type = "virtual"
+python = "3.11"
+features = ["test"]
+scripts = {"run" = "pytest tests/", "cov" = "pytest --cov=src --cov-report=term-missing"}
+
+[envs.lint]
+type = "virtual"
+python = "3.11"
+scripts = {"style" = "black --check src tests", "formatting" = "black src tests", "types" = "mypy src", "all" = ["style", "types"]}
+
+[envs.docs]
+type = "virtual"
+python = "3.11"
+dependencies = [
+    "sphinx>=5.0.0",
+    "sphinx-rtd-theme>=1.0.0"
+]
+scripts = {"build" = "sphinx-build -b html docs/source docs/build/html", "serve" = "python -m http.server -d docs/build/html"}
+
+[envs.prod]
+type = "virtual"
+python = "3.11"
+features = ["prod"]
+
+[feature.test]
+dependencies = [
+    "pytest>=7.3.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0"
+]
+
+[feature.prod]
+dependencies = [
+    "gunicorn>=20.1.0",
+    "python-dotenv>=1.0.0"
+]
+
+[scripts]
+start = "hatch run flask:run"
+test = "hatch run test:run"
+lint = "hatch run lint:all"

@@ -1,0 +1,37 @@
+# See also https://www.youtube.com/watch?v=NLjolI9FwCU
+name: ci_frontend
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build and push frontend
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          file: ./containers/app/frontend/Dockerfile.prod
+          tags: agility-game/agility-game-frontend:latest
+      - name: Update Docker Hub Description for Frontend
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: agility-game/agility-game-frontend
+          readme-filepath: ./containers/app/frontend/DESCRIPTION.md

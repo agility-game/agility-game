@@ -1,0 +1,15 @@
+ARG IMAGE_REPOSITORY
+ARG IMAGE_REPOSITORY_DIVISION
+FROM ${IMAGE_REPOSITORY}${IMAGE_REPOSITORY_DIVISION}postgres:14.15-alpine
+
+# Set default environment variables
+ENV POSTGRES_USER=db-user-prod \
+    POSTGRES_PASSWORD=db-password-prod \
+    POSTGRES_DB=agility_game_db \
+    PGDATA=/var/lib/postgresql/data/pgdata
+
+# Copy initialization script
+COPY init.sql.prod /docker-entrypoint-initdb.d/init.sql
+RUN chown postgres:postgres /docker-entrypoint-initdb.d/init.sql
+
+EXPOSE 5432

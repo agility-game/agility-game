@@ -1,0 +1,33 @@
+# Use an official Python runtime as a parent image
+FROM python:3.11-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV PIP_NO_CACHE_DIR=1
+ENV PYTHONPATH=/app/src
+
+# Set Flask environment variables
+ENV FLASK_ENV=development
+ENV FLASK_DEBUG=True
+ENV FLASK_APP=agility_game.app
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Hatch and dependencies
+RUN pip install --no-cache-dir hatch flask apiflask python-dotenv
+
+# Copy the application
+COPY . .
+
+# Expose the port the app runs on
+EXPOSE 5000
+
+# Set the default command to run the application
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]

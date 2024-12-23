@@ -1,0 +1,304 @@
+-- Create schemas
+CREATE SCHEMA IF NOT EXISTS app_data;
+CREATE SCHEMA IF NOT EXISTS audit_log;
+
+-- Create enum for game priority
+CREATE TYPE game_priority AS ENUM ('low', 'medium', 'high', 'critical');
+
+-- Create users with specific permissions
+CREATE USER game_reader WITH PASSWORD 'readonly_game_password';
+CREATE USER game_writer WITH PASSWORD 'writeaccess_game_password';
+
+-- Create games table
+CREATE TABLE app_data.games (
+    id SERIAL PRIMARY KEY,
+    owner VARCHAR(100) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    created_on TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_on TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    priority game_priority DEFAULT 'medium',
+    
+    -- Additional constraints
+    CONSTRAINT check_title_length CHECK (length(title) > 0 AND length(title) <= 255),
+    CONSTRAINT check_owner_length CHECK (length(owner) > 0 AND length(owner) <= 100)
+);
+
+-- Create archive table with the same structure
+CREATE TABLE app_data.games_archive (
+    LIKE app_data.games INCLUDING ALL
+);
+
+-- Create indexes for performance and querying
+CREATE INDEX idx_games_owner ON app_data.games(owner);
+CREATE INDEX idx_games_priority ON app_data.games(priority);
+CREATE INDEX idx_games_created_on ON app_data.games(created_on);
+-- Add text search indexes
+CREATE INDEX idx_games_title_text ON app_data.games USING gin(to_tsvector('english', title));
+CREATE INDEX idx_games_description_text ON app_data.games USING gin(to_tsvector('english', description));
+
+-- Create indexes for archive table
+CREATE INDEX idx_games_archive_owner ON app_data.games_archive(owner);
+CREATE INDEX idx_games_archive_priority ON app_data.games_archive(priority);
+CREATE INDEX idx_games_archive_created_on ON app_data.games_archive(created_on);
+CREATE INDEX idx_games_archive_title_text ON app_data.games_archive USING gin(to_tsvector('english', title));
+CREATE INDEX idx_games_archive_description_text ON app_data.games_archive USING gin(to_tsvector('english', description));
+
+-- Trigger to automatically update 'updated_on' timestamp
+CREATE OR REPLACE FUNCTION update_modified_column()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_on = CURRENT_TIMESTAMP;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER update_games_modtime
+    BEFORE UPDATE ON app_data.games
+    FOR EACH ROW
+    EXECUTE FUNCTION update_modified_column();
+
+-- Create roles for access control
+CREATE ROLE game_read_role;
+CREATE ROLE game_write_role;
+
+-- Grant appropriate permissions
+GRANT USAGE ON SCHEMA app_data TO game_read_role;
+GRANT SELECT ON app_data.games TO game_read_role;
+GRANT SELECT ON app_data.games_archive TO game_read_role;
+GRANT USAGE ON SCHEMA app_data TO game_write_role;
+GRANT ALL ON app_data.games TO game_write_role;
+GRANT ALL ON app_data.games_archive TO game_write_role;
+GRANT USAGE, SELECT ON SEQUENCE app_data.games_id_seq TO game_write_role;
+
+-- Assign roles to users
+GRANT game_read_role TO game_reader;
+GRANT game_write_role TO game_writer;
+
+-- Insert sample data
+INSERT INTO app_data.games (owner, title, description, priority) VALUES
+    ('john_doe', 'First Game', 'This is the first sample game', 'low'),
+    ('jane_smith', 'Important Update', 'A critical game that needs attention', 'critical'),
+    ('system', 'Welcome Game', 'Welcome to the gaming system', 'medium');
+
+-- Create function for inserting games
+CREATE OR REPLACE FUNCTION app_data.insert_game(
+    p_owner VARCHAR(100),
+    p_title VARCHAR(255),
+    p_description TEXT,
+    p_priority game_priority DEFAULT 'medium'
+) RETURNS INTEGER AS $$
+DECLARE
+    v_id INTEGER;
+BEGIN
+    INSERT INTO app_data.games (owner, title, description, priority)
+    VALUES (p_owner, p_title, p_description, p_priority)
+    RETURNING id INTO v_id;
+    
+    RETURN v_id;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Create type for sort options
+CREATE TYPE sort_field AS ENUM ('created_on', 'updated_on', 'priority', 'title', 'owner');
+CREATE TYPE sort_direction AS ENUM ('asc', 'desc');
+
+-- Enhanced search function with sorting options
+CREATE OR REPLACE FUNCTION app_data.search_games(
+    p_owner VARCHAR(100) DEFAULT NULL,
+    p_priority game_priority DEFAULT NULL,
+    p_start_date TIMESTAMP WITH TIME ZONE DEFAULT NULL,
+    p_end_date TIMESTAMP WITH TIME ZONE DEFAULT NULL,
+    p_search_text TEXT DEFAULT NULL,
+    p_limit INTEGER DEFAULT 10,
+    p_offset INTEGER DEFAULT 0,
+    p_sort_by sort_field DEFAULT 'created_on',
+    p_sort_direction sort_direction DEFAULT 'desc'
+) RETURNS TABLE (
+    id INTEGER,
+    owner VARCHAR(100),
+    title VARCHAR(255),
+    description TEXT,
+    created_on TIMESTAMP WITH TIME ZONE,
+    updated_on TIMESTAMP WITH TIME ZONE,
+    priority game_priority,
+    total_count BIGINT
+) AS $$
+BEGIN
+    RETURN QUERY
+    WITH matching_games AS (
+        SELECT 
+            m.id, 
+            m.owner, 
+            m.title, 
+            m.description, 
+            m.created_on, 
+            m.updated_on, 
+            m.priority
+        FROM 
+            app_data.games m
+        WHERE 
+            (p_owner IS NULL OR m.owner = p_owner)
+            AND (p_priority IS NULL OR m.priority = p_priority)
+            AND (p_start_date IS NULL OR m.created_on >= p_start_date)
+            AND (p_end_date IS NULL OR m.created_on <= p_end_date)
+            AND (p_search_text IS NULL OR 
+                 m.title ILIKE '%' || p_search_text || '%' OR 
+                 m.description ILIKE '%' || p_search_text || '%')
+    )
+    SELECT 
+        mm.*,
+        (SELECT COUNT(*) FROM matching_games) as total_count
+    FROM 
+        matching_games mm
+    ORDER BY
+        CASE WHEN p_sort_by = 'created_on' AND p_sort_direction = 'asc' THEN mm.created_on END ASC,
+        CASE WHEN p_sort_by = 'created_on' AND p_sort_direction = 'desc' THEN mm.created_on END DESC,
+        CASE WHEN p_sort_by = 'updated_on' AND p_sort_direction = 'asc' THEN mm.updated_on END ASC,
+        CASE WHEN p_sort_by = 'updated_on' AND p_sort_direction = 'desc' THEN mm.updated_on END DESC,
+        CASE WHEN p_sort_by = 'priority' AND p_sort_direction = 'asc' THEN mm.priority END ASC,
+        CASE WHEN p_sort_by = 'priority' AND p_sort_direction = 'desc' THEN mm.priority END DESC,
+        CASE WHEN p_sort_by = 'title' AND p_sort_direction = 'asc' THEN mm.title END ASC,
+        CASE WHEN p_sort_by = 'title' AND p_sort_direction = 'desc' THEN mm.title END DESC,
+        CASE WHEN p_sort_by = 'owner' AND p_sort_direction = 'asc' THEN mm.owner END ASC,
+        CASE WHEN p_sort_by = 'owner' AND p_sort_direction = 'desc' THEN mm.owner END DESC
+    LIMIT p_limit
+    OFFSET p_offset;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Add function to get game statistics
+CREATE OR REPLACE FUNCTION app_data.get_game_stats(
+    p_start_date TIMESTAMP WITH TIME ZONE DEFAULT NULL,
+    p_end_date TIMESTAMP WITH TIME ZONE DEFAULT NULL
+) RETURNS TABLE (
+    total_games BIGINT,
+    games_by_priority JSON,
+    games_by_owner JSON,
+    avg_games_per_day NUMERIC,
+    avg_game_length NUMERIC,
+    most_active_hour INTEGER,
+    priority_trend JSON
+) AS $$
+BEGIN
+    RETURN QUERY
+    WITH date_range AS (
+        SELECT 
+            COALESCE(p_start_date, min(created_on)) as start_date,
+            COALESCE(p_end_date, CURRENT_TIMESTAMP) as end_date
+        FROM app_data.games
+    ),
+    priority_stats AS (
+        SELECT priority, COUNT(*) as priority_count
+        FROM app_data.games
+        WHERE (p_start_date IS NULL OR created_on >= p_start_date)
+        AND (p_end_date IS NULL OR created_on <= p_end_date)
+        GROUP BY priority
+    ),
+    owner_stats AS (
+        SELECT owner, COUNT(*) as owner_count
+        FROM app_data.games
+        WHERE (p_start_date IS NULL OR created_on >= p_start_date)
+        AND (p_end_date IS NULL OR created_on <= p_end_date)
+        GROUP BY owner
+    ),
+    hourly_stats AS (
+        SELECT EXTRACT(HOUR FROM created_on) as hour, COUNT(*) as count
+        FROM app_data.games
+        WHERE (p_start_date IS NULL OR created_on >= p_start_date)
+        AND (p_end_date IS NULL OR created_on <= p_end_date)
+        GROUP BY hour
+        ORDER BY count DESC
+        LIMIT 1
+    ),
+    priority_by_day AS (
+        SELECT 
+            DATE_TRUNC('day', created_on) as day,
+            priority,
+            COUNT(*) as count
+        FROM app_data.games
+        WHERE (p_start_date IS NULL OR created_on >= p_start_date)
+        AND (p_end_date IS NULL OR created_on <= p_end_date)
+        GROUP BY day, priority
+        ORDER BY day
+    ),
+    stats AS (
+        SELECT
+            (SELECT COUNT(*) FROM app_data.games 
+             WHERE (p_start_date IS NULL OR created_on >= p_start_date)
+             AND (p_end_date IS NULL OR created_on <= p_end_date)) as total_msgs,
+            (SELECT json_object_agg(p.priority, COALESCE(ps.priority_count, 0))
+             FROM (SELECT unnest(enum_range(NULL::game_priority)) as priority) p
+             LEFT JOIN priority_stats ps ON p.priority = ps.priority) as priority_counts,
+            (SELECT json_object_agg(o.owner, COALESCE(os.owner_count, 0))
+             FROM (SELECT DISTINCT owner FROM app_data.games) o
+             LEFT JOIN owner_stats os ON o.owner = os.owner) as owner_counts,
+            NULLIF(EXTRACT(EPOCH FROM (SELECT end_date - start_date FROM date_range)) / 86400.0, 0) as days,
+            (SELECT AVG(length(description)) FROM app_data.games
+             WHERE (p_start_date IS NULL OR created_on >= p_start_date)
+             AND (p_end_date IS NULL OR created_on <= p_end_date)) as avg_length,
+            (SELECT hour FROM hourly_stats) as peak_hour,
+            (SELECT json_agg(json_build_object(
+                'day', day,
+                'counts', json_object_agg(priority, count)
+            )) FROM priority_by_day GROUP BY day) as trend
+    )
+    SELECT
+        total_msgs,
+        priority_counts,
+        owner_counts,
+        ROUND(total_msgs::NUMERIC / NULLIF(days, 0), 2) as avg_per_day,
+        ROUND(avg_length::NUMERIC, 2) as avg_msg_length,
+        peak_hour,
+        trend
+    FROM stats;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Add function to archive games by date range
+CREATE OR REPLACE FUNCTION app_data.archive_games(
+    p_start_date TIMESTAMP WITH TIME ZONE,
+    p_end_date TIMESTAMP WITH TIME ZONE
+) RETURNS TABLE (
+    archived_count INTEGER,
+    start_date TIMESTAMP WITH TIME ZONE,
+    end_date TIMESTAMP WITH TIME ZONE,
+    archived_priorities JSON
+) AS $$
+DECLARE
+    v_archived_count INTEGER;
+    v_priority_counts JSON;
+BEGIN
+    -- Move to archive table
+    WITH archived AS (
+        DELETE FROM app_data.games 
+        WHERE created_on >= p_start_date 
+        AND created_on < p_end_date
+        RETURNING *
+    )
+    INSERT INTO app_data.games_archive 
+    SELECT * FROM archived;
+    
+    GET DIAGNOSTICS v_archived_count = ROW_COUNT;
+    
+    -- Get priority distribution of archived games
+    WITH priority_counts AS (
+        SELECT priority, COUNT(*) as count
+        FROM app_data.games_archive
+        WHERE created_on >= p_start_date 
+        AND created_on < p_end_date
+        GROUP BY priority
+    )
+    SELECT json_object_agg(p.priority, COALESCE(pc.count, 0))
+    INTO v_priority_counts
+    FROM (SELECT unnest(enum_range(NULL::game_priority)) as priority) p
+    LEFT JOIN priority_counts pc ON p.priority = pc.priority;
+
+    RETURN QUERY
+    SELECT 
+        v_archived_count,
+        p_start_date,
+        p_end_date,
+        v_priority_counts;
+END;
+$$ LANGUAGE plpgsql;

@@ -1,0 +1,113 @@
+# .ftl/config.yaml
+project_name: agility-game
+version: 0.1.0
+
+# Deployment environments
+environments:
+  development:
+    branch: develop
+    deploy_strategy: blue_green
+    cloud_provider: hetzner
+    region: fsn1  # Falkenstein, Germany
+    server_type: cx21  # 2 vCPU, 4GB RAM
+
+  staging:
+    branch: staging
+    deploy_strategy: canary
+    cloud_provider: hetzner
+    region: fsn1  # Falkenstein, Germany
+    server_type: cx21  # 2 vCPU, 4GB RAM
+
+  production:
+    branch: main
+    deploy_strategy: rolling_update
+    cloud_provider: hetzner
+    region: fsn1  # Falkenstein, Germany
+    server_type: cx21  # 2 vCPU, 4GB RAM
+
+# Deployment Configuration
+deployment:
+  container_registry: dockerhub
+  container_image: agilitygame/agility-game-server
+  port: 5000
+  health_check_path: /health
+
+# Infrastructure Provisioning
+infrastructure:
+  firewall_rules:
+    - direction: inbound
+      protocol: tcp
+      port: 80
+    - direction: inbound
+      protocol: tcp
+      port: 443
+    - direction: inbound
+      protocol: tcp
+      port: 5000
+
+# Networking
+networking:
+  load_balancer: true
+  domain: yourdomain.com
+  ssl_certificate: true
+
+# Scaling and Updates
+scaling:
+  min_instances: 1
+  max_instances: 3
+  update_strategy: rolling_update
+
+
+
+project_name: agility_game
+version: 0.1.0
+
+# Deployment environments
+environments:
+  development:
+    branch: develop
+    deploy_strategy: blue_green
+    cloud_provider: aws
+    region: us-west-2
+    instance_type: t3.small
+
+  staging:
+    branch: staging
+    deploy_strategy: canary
+    cloud_provider: aws
+    region: us-east-1
+    instance_type: t3.medium
+
+  production:
+    branch: main
+    deploy_strategy: rolling_update
+    cloud_provider: aws
+    region: us-east-1
+    instance_type: t3.large
+
+# Deployment configurations
+deployment:
+  container_registry: ecr
+  container_image: agility-game-server
+  port: 5000
+  health_check_path: /health
+
+# Infrastructure as Code
+infrastructure:
+  terraform_enabled: true
+  vcp_cidr: 10.0.0.0/16
+  subnets:
+    - 10.0.1.0/24
+    - 10.0.2.0/24
+
+# Monitoring and Logging
+monitoring:
+  enabled: true
+  provider: cloudwatch
+  log_retention_days: 30
+
+# Scaling
+scaling:
+  min_instances: 2
+  max_instances: 10
+  cpu_threshold: 70

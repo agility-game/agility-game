@@ -1,0 +1,8 @@
+# server/requirements.txt
+Flask==3.0.3
+Flask-SQLAlchemy==3.1.1
+apiflask==2.2.1
+black==24.10.0
+pytest==8.3.4
+python-dotenv==1.0.1
+pyyaml==6.0.2
