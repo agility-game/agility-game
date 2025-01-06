@@ -4,7 +4,7 @@ Visit https://app.devrev.ai/agility-game/
 
 ## 100 - Tools 
    
-[DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g)  
+- [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g)  
 
 Create **Requirements** in [DevRev](https://app.devrev.ai/agility-game/) as part of a **Product Roadmap**.
    
