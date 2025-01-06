@@ -8,4 +8,4 @@ Cursor.io
 
 ## Prompts 
 
-- "Create a README file template for a digital board game project named 'Agility Game.'"
+> "Create a README file template for a digital board game project named 'Agility Game.'"
