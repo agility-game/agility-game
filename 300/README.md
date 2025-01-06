@@ -1,8 +1,8 @@
 # 300 - Building Our Application
 
-1. **Define Requirements**:  
-   **Tool**: [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g)   
-   **Prompt**: "Generate user stories for a digital board game called 'Agility Game.'"
+## 100 - Define Requirements 
+
+See [README.md](./100/README.md)
 
 2. **Set Up GitHub Repository**:  
    **Tool**: Cursor.io  
