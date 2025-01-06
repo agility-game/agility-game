@@ -26,6 +26,8 @@ See [README.md](./600/README.md)
 
 ## 700 - Documentation 
 
+See [README.md](./700/README.md)
+
    **Tool**: Cursor.io  
    **Prompt**: "Generate documentation for a REST API endpoint that retrieves game state for 'Agility Game.'"
 
