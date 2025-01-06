@@ -22,8 +22,7 @@ See [README.md](./500/README.md)
 
 ## 600 - Implement Features 
 
-   **Tool**: [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g)   
-   **Prompt**: "Write the implementation for a function that manages player turns in 'Agility Game.'"
+See [README.md](./600/README.md)
 
 ## 700 - Documentation 
 
