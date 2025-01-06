@@ -28,13 +28,9 @@ See [README.md](./600/README.md)
 
 See [README.md](./700/README.md)
 
-   **Tool**: Cursor.io  
-   **Prompt**: "Generate documentation for a REST API endpoint that retrieves game state for 'Agility Game.'"
-
 ## 800 - Continuous Integration
 
-   **Tool**: GitHub Actions  
-   **Prompt**: "Create a GitHub Actions workflow file to run tests for 'Agility Game' on every push."
+See [README.md](./800/README.md)
 
 ## 900 - Review and Refactor
 
