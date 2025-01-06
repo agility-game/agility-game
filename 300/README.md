@@ -34,8 +34,7 @@ See [README.md](./800/README.md)
 
 ## 900 - Review and Refactor
 
-   **Tool**: DeepCode  
-   **Prompt**: "Analyze my codebase for 'Agility Game' for potential bugs and improvements."
+See [README.md](./900/README.md)
 
 ## 1000 - Iterate 
 
