@@ -1,3 +1,3 @@
 # 100 - Tools
 
-- Cursor.io
+- [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g) 
