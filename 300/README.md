@@ -5,8 +5,8 @@
 See [README.md](./100/README.md)
 
 ## 200 - Set Up GitHub Repository  
-   **Tool**: Cursor.io  
-   **Prompt**: "Create a README file template for a digital board game project named 'Agility Game.'"
+
+See [README.md](./200/README.md)
 
 ## 300 - Choose a Tech Stack 
    **Tool**: Cursor.io  
