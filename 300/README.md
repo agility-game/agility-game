@@ -1,11 +1,11 @@
 # 300 - Building Our Application
 
 1. **Define Requirements**:  
-   **Tool**: Cursor.io  
+   **Tool**: [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g)   
    **Prompt**: "Generate user stories for a digital board game called 'Agility Game.'"
 
 2. **Set Up GitHub Repository**:  
-   **Tool**: GitHub Copilot  
+   **Tool**: Cursor.io  
    **Prompt**: "Create a README file template for a digital board game project named 'Agility Game.'"
 
 3. **Choose a Tech Stack**:  
@@ -13,7 +13,7 @@
    **Prompt**: "Suggest a tech stack for a web-based digital board game application."
 
 4. **Plan Your Features**:  
-   **Tool**: Jira with AI Plugins  
+   **Tool**: [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g) 
    **Prompt**: "Create a backlog of features for the 'Agility Game' digital board game."
 
 5. **Test-Driven Development (TDD)**:  
@@ -21,7 +21,7 @@
    **Prompt**: "Write unit tests for a function that calculates player scores in 'Agility Game.'"
 
 6. **Implement Features**:  
-   **Tool**: GitHub Copilot  
+   **Tool**: [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g)   
    **Prompt**: "Write the implementation for a function that manages player turns in 'Agility Game.'"
 
 7. **Documentation**:  
@@ -41,7 +41,7 @@
     **Prompt**: "Suggest improvements for my existing feature implementation in 'Agility Game.'"
 
 11. **Deployment**:  
-    **Tool**: GitHub Copilot  
+    **Tool**: Cursor.io  
     **Prompt**: "Write a deployment script for the 'Agility Game' Node.js application."
 
 12. **User Feedback**:  
