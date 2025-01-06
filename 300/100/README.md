@@ -8,7 +8,7 @@ Visit https://app.devrev.ai/agility-game/
 
 Create **Requirements** in [DevRev](https://app.devrev.ai/agility-game/) as part of a **Product Roadmap**.
    
-## 200 - Prompt 
+## 200 - Prompts 
    
 >  "Generate user stories for a digital board game called 'Agility Game.'"
 
