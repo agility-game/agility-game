@@ -16,10 +16,10 @@ See [README.md](./300/README.md)
 
 See [README.md](./400/README.md)
 
-   **Tool**: [DevRev synced with GitLab](https://marketplace.devrev.ai/gitlab-pzy4ce0g) 
-   **Prompt**: "Create a backlog of features for the 'Agility Game' digital board game."
+## 500 - Test-Driven Development (TDD) 
 
-## 500 - Test-Driven Development (TDD)  
+See [README.md](./500/README.md)
+
    **Tool**: Cursor.io  
    **Prompt**: "Write unit tests for a function that calculates player scores in 'Agility Game.'"
 
