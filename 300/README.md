@@ -46,5 +46,4 @@ See [README.md](./1100/README.md)
 
 ## 1200 - User Feedback 
 
-    **Tool**: Replit  
-    **Prompt**: "Create a feedback form for users to submit their thoughts on the 'Agility Game.'"
+See [README.md](./1200/README.md)
