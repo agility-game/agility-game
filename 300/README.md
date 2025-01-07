@@ -42,8 +42,7 @@ See [README.md](./1000/README.md)
 
 ## 1100 - Deployment 
 
-    **Tool**: Cursor.io  
-    **Prompt**: "Write a deployment script for the 'Agility Game' Node.js application."
+See [README.md](./1100/README.md)
 
 ## 1200 - User Feedback 
 
