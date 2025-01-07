@@ -38,8 +38,7 @@ See [README.md](./900/README.md)
 
 ## 1000 - Iterate 
 
-    **Tool**: Cursor.io  
-    **Prompt**: "Suggest improvements for my existing feature implementation in 'Agility Game.'"
+See [README.md](./1000/README.md)
 
 ## 1100 - Deployment 
 
